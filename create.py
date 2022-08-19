@@ -20,7 +20,7 @@ def download_required_images_and_audio(query):
     else:
         for x in range(10):
             image = peakpx(query)[random.randint(0, 30)]
-            save_images2([image],{x})
+            save_images2([image],x)
         download_mp3(Genre.mass, random.randint(0, 20))
 
 
