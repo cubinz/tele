@@ -56,7 +56,9 @@ if __name__ == "__main__":
     elif args.mot:
         download_required_images_and_audio("m")
     else:
-        download_required_images_and_audio("a")    
+        download_required_images_and_audio("a")
+    print("Converting images into videos ...")
+    concat_images_in_pictures_dir_to_video()
     print("Adding audio to the video ...")
     add_output_mp3_audio_to_output_old_mp4()
     print("Cleaning unwanted files ...")
