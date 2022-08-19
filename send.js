@@ -2,9 +2,10 @@ import { Telegraf } from 'telegraf'
 import { createReadStream } from 'fs'
 import 'dotenv/config'
 var chatId = "-1709419186"
-let token = "5127508739:AAFPOwb2HoRPDZvvZVOqBBvXGU8YOmAV_p0"
+let token = process.env.TELEGRAM_TOKEN
 let args = process.argv.slice(2)
 let bot = new Telegraf(token)
+console.log(bot+"ssssssssssssss")
 let type = args[0]
 let src = args[1]
 if (type == "m") {
