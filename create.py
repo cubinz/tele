@@ -6,7 +6,7 @@ from src.audio import Genre, download_mp3
 from src.utils import save_images, clean
 from src.editor import concat_images_in_pictures_dir_to_video, add_output_mp3_audio_to_output_old_mp4
 
-tags = ['vijay', "ajith", "surya", "rajini","kamal", "simbu", "sivakarthikeyan"]
+tags = ["kids", "cute", "love","hotgirl"]
 
 def download_required_images_and_audio(query):
     if query == "m":
