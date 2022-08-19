@@ -6,7 +6,7 @@ from src.audio import Genre, download_mp3
 from src.utils import save_images, clean
 from src.editor import concat_images_in_pictures_dir_to_video, add_output_mp3_audio_to_output_old_mp4
 
-tags = ["kids", "cute", "love","hotgirl"]
+tags = ["kids", "cute", "cute kid"]
 
 def download_required_images_and_audio(query):
     if query == "m":
@@ -19,6 +19,7 @@ def download_required_images_and_audio(query):
         download_mp3(Genre.melody, random.randint(0,  99))
     else:
         image = peakpx(query)[random.randint(0, 30)]
+        print(image)
         save_images([image], "pictures")
         download_mp3(Genre.mass, random.randint(0, 30))
 
