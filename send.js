@@ -5,7 +5,6 @@ var chatId = "-1709419186"
 let token = process.env.TELEGRAM_TOKEN
 let args = process.argv.slice(2)
 let bot = new Telegraf(token)
-console.log(JSON.stringify(bot)+"ssssssssssssss")
 let type = args[0]
 let src = args[1]
 if (type == "m") {
