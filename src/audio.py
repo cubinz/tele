@@ -10,11 +10,11 @@ class Genre(Enum):
 def download_mp3(type: Genre, id: int):
 
     if type == Genre.mass:
-        target_playlist = "https://www.youtube.com/playlist?list=PLEF3AF2D56CBF2DC2"
+        target_playlist = "https://www.youtube.com/playlist?list=RDQMHtTlsXXHemQ"
     elif type == Genre.melody:
-        target_playlist = "https://www.youtube.com/playlist?list=PLEF3AF2D56CBF2DC2"
+        target_playlist = "https://www.youtube.com/playlist?list=RDQMHtTlsXXHemQ"
     elif type == Genre.motivation:
-        target_playlist = "https://www.youtube.com/playlist?list=PLEF3AF2D56CBF2DC2"
+        target_playlist = "https://www.youtube.com/playlist?list=RDQMHtTlsXXHemQ"
     else:
         target_playlist = "https://www.youtube.com/playlist?list=RDQMHtTlsXXHemQ"
 
