@@ -2,7 +2,7 @@ from moviepy.editor import *
 
 
 def concat_images_in_pictures_dir_to_video():
-    clips = [ImageClip(m).set_duration(3) for m in [f'./pictures/{x}' for x in os.listdir("pictures")]]
+    clips = [ImageClip(m).set_duration(10) for m in [f'./pictures/{x}' for x in os.listdir("pictures")]]
     concat_clip = concatenate_videoclips(clips)
     concat_clip.write_videofile("output_old.mp4", fps=24)
 
