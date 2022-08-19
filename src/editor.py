@@ -2,10 +2,10 @@ from moviepy.editor import *
 
 
 def concat_images_in_pictures_dir_to_video():
-    clips = [ImageClip(m).set_duration(3) for m in [f'./pictures/{x}' for x in os.listdir("pictures")]]
+    clips = [ImageClip(f'./pictures/1.jpeg').set_duration(3)]
     concat_clip = concatenate_videoclips(clips)
     concat_clip.write_videofile("input1.mp4", fps=30)
-    clips = [ImageClip(m).set_duration(3) for m in [f'./pictures/{x}' for x in os.listdir("pictures")]]
+    clips = [ImageClip(f'./pictures/2.jpeg').set_duration(3)]
     concat_clip = concatenate_videoclips(clips)
     concat_clip.write_videofile("input2.mp4", fps=30)
 
