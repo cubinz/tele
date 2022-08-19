@@ -12,7 +12,15 @@ def save_images(images: list, directory: str) -> None:
             shutil.copyfileobj(res.raw, f)
         c = c + 1
 
-
+def save_images2(images: list, directory: str, meensnum: str) -> None:
+    os.mkdir(directory)
+    c = 1
+    for image in images:
+        res = requests.get(image, stream=True)
+        with open(f"./{directory}/{meensnum}.jpeg", "wb") as f:
+            res.raw.decode_content = True
+            shutil.copyfileobj(res.raw, f)
+        c = c + 1
 
 def clean():
     shutil.rmtree("pictures")
