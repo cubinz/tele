@@ -10,17 +10,23 @@ tags = ["kids", "cute", "love","hotgirl"]
 
 def download_required_images_and_audio(query):
     if query == "m":
-        image = peakpx('quotes')[random.randint(0, 38)]
+#         image = peakpx('quotes')[random.randint(0, 38)]
+#         save_images([image], "pictures")
+#         download_mp3(Genre.motivation, random.randint(0, 70))
+        image = melody_wallpapers()[random.randint(0, 60)]
         save_images([image], "pictures")
-        download_mp3(Genre.motivation, random.randint(0, 70))
+        download_mp3(Genre.melody, random.randint(0,  99))
     elif query == "a":
         image = melody_wallpapers()[random.randint(0, 60)]
         save_images([image], "pictures")
         download_mp3(Genre.melody, random.randint(0,  99))
     else:
-        image = peakpx(query)[random.randint(0, 30)]
+#         image = peakpx(query)[random.randint(0, 30)]
+#         save_images([image], "pictures")
+#         download_mp3(Genre.mass, random.randint(0, 30))
+        image = melody_wallpapers()[random.randint(0, 60)]
         save_images([image], "pictures")
-        download_mp3(Genre.mass, random.randint(0, 30))
+        download_mp3(Genre.melody, random.randint(0,  99))
 
 
 if __name__ == "__main__":
