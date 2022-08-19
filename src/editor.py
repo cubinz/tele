@@ -11,4 +11,4 @@ def concat_images_in_pictures_dir_to_video():
 
 def add_output_mp3_audio_to_output_old_mp4():    
     os.system('ffmpeg -i "concat:input1.mp4|input2.mp4" -c copy output_old.mp4')    
-    os.system("ffmpeg -i output_old.mp4 -i output.mp3 -c copy -map 0:v:0 -map 1:a:0 output.mp4")
+    
