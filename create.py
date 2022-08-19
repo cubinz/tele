@@ -18,9 +18,9 @@ def download_required_images_and_audio(query):
         save_images([image], "pictures")
         download_mp3(Genre.melody, random.randint(0,  99))
     else:
-        image = peakpx(query)[random.randint(0, 30)]
+        image = peakpx(query)[random.randint(2, 30)]
         save_images([image], "pictures")
-        download_mp3(Genre.mass, random.randint(0, 30))
+        download_mp3(Genre.mass, random.randint(0, 20))
 
 
 if __name__ == "__main__":
