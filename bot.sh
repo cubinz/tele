@@ -4,19 +4,19 @@ echo 1
 
 echo 'Auto Video making and upload it to Telegram'
 
-# echo 'Creating video ...'
+echo 'Creating video ...'
 
-# python create.py --mass
+python create.py --mass
 
-# echo 'Video Created :)'
+echo 'Video Created :)'
 
-# echo 'Sending to Telegram ...'
+echo 'Sending to Telegram ...'
 
-# node send.js v output.mp4
+node send.js v output.mp4
 
-# echo 'Video sended sucessfully :)'
+echo 'Video sended sucessfully :)'
 
-# rm output.mp4
+rm output.mp4
 
 
 
