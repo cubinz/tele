@@ -57,6 +57,9 @@ if __name__ == "__main__":
         download_required_images_and_audio("m")
     else:
         download_required_images_and_audio("a")
+        
+    imagee = "https://github.com/cubinz/tele/blob/master/subscribe.png"
+    save_images([imagee], "imagee")
     print("Converting images into videos ...")
     concat_images_in_pictures_dir_to_video()
     print("Adding audio to the video ...")
