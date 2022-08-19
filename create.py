@@ -3,7 +3,7 @@ import random
 
 from src.images import peakpx, melody_wallpapers
 from src.audio import Genre, download_mp3
-from src.utils import save_images, clean
+from src.utils import save_images, clean, save_images2
 from src.editor import concat_images_in_pictures_dir_to_video, add_output_mp3_audio_to_output_old_mp4
 
 tags = ["kids", "cute", "cute kid"]
