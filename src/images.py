@@ -2,11 +2,9 @@ import requests
 from bs4 import BeautifulSoup
 
 def peakpx(query: str) -> list[str]:
-    markup = requests.get(f"https://yandex.com/images/search?text={query}").text
-    #markup = requests.get(f"https://www.peakpx.com/en/search?q={query}").text
+    markup = requests.get(f"https://www.peakpx.com/en/search?q={query}").text
     soup = BeautifulSoup(markup, "html.parser")
-    image_tags = soup.find_all("img", {'class', 'serp-item__thumb justifier__thumb'})
-    #image_tags = soup.find_all("img", {'class', 'lazy lst_img'})
+    image_tags = soup.find_all("img", {'class', 'lazy lst_img'})
 
     return list(map(lambda tag: tag['data-src'], image_tags))
 
