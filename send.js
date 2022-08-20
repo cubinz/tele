@@ -20,6 +20,11 @@ if (type == "m") {
     bot.telegram.sendVideo(chatId, {
         source: readStream
     })
+} else if (type == "a") {
+    const readStream = createReadStream(src)
+    bot.telegram.sendAudio(chatId, {
+        source: readStream
+    })
 } else {
     bot.telegram.sendMessage("ok")
 }
