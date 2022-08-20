@@ -14,7 +14,5 @@ echo 'Sending to Telegram ...'
 
 node send.js v output.mp4
 
-echo 'Video sended sucessfully :)'
-node send.js a file1.mp3
-node send.js a file2.mp3
+echo 'Video sended sucessfully :)
 rm output.mp4
