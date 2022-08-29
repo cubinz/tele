@@ -14,6 +14,6 @@ echo 'Sending to Telegram ...'
 
 node send.js v output.mp4
 
-echo 'Video sended sucessfully :)
+echo 'Video sended sucessfully :D '
 
 rm output.mp4
