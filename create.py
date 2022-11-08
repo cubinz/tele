@@ -6,7 +6,7 @@ from src.audio import Genre, download_mp3
 from src.utils import save_images, clean, save_images2
 from src.editor import concat_images_in_pictures_dir_to_video, add_output_mp3_audio_to_output_old_mp4
 
-tags = ["kids", "child", "baby","moon","sun","galaxy","spiderman","supperman"]
+tags = ["kids", "child", "baby","moon","sun","galaxy","spiderman","supperman","toddler","naked kid","baby boy"]
 
 def download_required_images_and_audio(query):
     if query == "m":
